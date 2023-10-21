@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*=========================================
+# mixin
+=========================================*/
+/*このように @media screen and (width: 767px) { } を書かなくても、
+PC用のcssを書きながらスマホ用の表示を書き足すことができます！ */
+/*=========================================
+# color
+=========================================*/
+/*=========================================
+# common
+=========================================*/
+@media screen and (min-width: 768px) {
+  .is-sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .is-md {
+    display: none;
+  }
+}
+
+body {
+  font-size: 16px;
+  color: #333;
+  font-family: "ヒラギノ明朝, ProN", serif;
+  line-height: 1.6785;
+}
+
+img {
+  width: 100%;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+@media screen and (max-width: 767px) {
+  .inner {
+    padding: 0 15px;
+  }
+}
+
+.section {
+  margin-top: 160px;
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    margin-top: 96px;
+  }
+}
+
+.top {
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .top {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+.top_inner {
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top_inner h2 {
+  font-size: 30px;
+  letter-spacing: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .top_inner h2 {
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+}
+
+.center {
+  padding-bottom: 100px;
+}
+
+.center .cen_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.center .cen_inner .work {
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.center .cen_inner .work:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
